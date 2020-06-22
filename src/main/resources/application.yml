@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: cortbar
+  datasource:
+    url: jdbc:mysql://localhost:3306/backone?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 111111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8762
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+mybatis:
+  mapper-locations: classpath*:sqlMap/*.xml
